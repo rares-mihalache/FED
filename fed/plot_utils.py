@@ -1,17 +1,21 @@
+from matplotlib.figure import Figure
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
 
-def plot_gdp_trends(df: pd.DataFrame, countries: list[str] | None = None) -> plt.Figure:
+def plot_gdp_trends(
+        df: pd.DataFrame, countries: list[str] | None = None) -> Figure:
     """Plot GDP growth trajectories over time for selected economies.
 
     Parameters
     ----------
     df : pd.DataFrame
-        Cleaned GDP DataFrame in long format with columns ['Country Name', 'Year', 'GDP'].
+        Cleaned GDP DataFrame in long format with columns
+        ['Country Name', 'Year', 'GDP'].
     countries : list[str] | None, optional
-        List of country names to plot. If None, plots all countries in the dataset.
+        List of country names to plot.
+        If None, plots all countries in the dataset.
 
     Returns
     -------
