@@ -19,7 +19,7 @@ def plot_gdp_trends(
 
     Returns
     -------
-    plt.Figure
+    Figure
         Matplotlib figure object containing the plot.
     """
     sns.set_theme(style="whitegrid")
